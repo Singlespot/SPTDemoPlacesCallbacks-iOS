@@ -1,0 +1,48 @@
+Podfile.lock
+Pods/Manifest.lock
+Pods/Local Podspecs/SPTProximityKit.podspec.json
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/quentin.xcuserdatad/xcschemes/Pods-SPTDemoPlacesCallbacks.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/quentin.xcuserdatad/xcschemes/SPTProximityKit.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/quentin.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/SPTProximityKit/SPTProximityKit.xcframework/Info.plist
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Info.plist
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/README.md
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/SPTProximityKit
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTCustomLocationPopup.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTLocationPopupConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTProximityKit.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTProximityManager.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTProximityManagerMode.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Modules/module.modulemap
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-armv7/SPTProximityKit.framework/Info.plist
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-armv7/SPTProximityKit.framework/_CodeSignature/CodeResources
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Info.plist
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/README.md
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/SPTProximityKit
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/_CodeSignature/CodeResources
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTCustomLocationPopup.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTLocationPopupConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTProximityKit.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTProximityManager.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTProximityManagerMode.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Modules/module.modulemap
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-acknowledgements.markdown
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-acknowledgements.plist
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-dummy.m
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-frameworks-Debug-input-files.xcfilelist
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-frameworks-Debug-output-files.xcfilelist
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-frameworks-Release-input-files.xcfilelist
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-frameworks-Release-output-files.xcfilelist
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-frameworks.sh
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-Info.plist
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks-umbrella.h
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks.debug.xcconfig
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks.modulemap
+Pods/Target Support Files/Pods-SPTDemoPlacesCallbacks/Pods-SPTDemoPlacesCallbacks.release.xcconfig
+Pods/Target Support Files/SPTProximityKit/SPTProximityKit-xcframeworks-input-files.xcfilelist
+Pods/Target Support Files/SPTProximityKit/SPTProximityKit-xcframeworks-output-files.xcfilelist
+Pods/Target Support Files/SPTProximityKit/SPTProximityKit-xcframeworks.sh
+Pods/Target Support Files/SPTProximityKit/SPTProximityKit.debug.xcconfig
+Pods/Target Support Files/SPTProximityKit/SPTProximityKit.release.xcconfig
+SPTDemoPlacesCallbacks.xcworkspace/contents.xcworkspacedata
