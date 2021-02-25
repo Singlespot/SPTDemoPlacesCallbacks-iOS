@@ -2,10 +2,10 @@
 
 ## Installation
 
+- Change `<USER_NAME>` & `<PASSWORD>` in `Podfile`
 - Run `pod install` in dowloaded folder.
 - Open SPTDemoPlacesCallbacks.xcworkspace
 - Change BundleID
-- Change `<USER_NAME>` & `<PASSWORD>` in `Podfile`
 - Change `<YOUR_API_KEY>` & `<YOUR_API_SECRET>` in `AppDelegate`
 
 
