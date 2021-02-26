@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        enterHomeConf.beforeHourOfTheDay = 0
 //        enterHomeConf.minHoursBetweenEvents = 0
 //        SPTProximityManager.setEnterHomeCallbackWith(enterHomeConf) { (placeCoord) in
+//            print("Home Enter at \(placeCoord)")
 //            presentNotif(title: "Welcome Home", message: "Home Enter notif triggered at \(placeCoord)")
 //        }
 //
@@ -37,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        exitWorkConf.minHoursBetweenEvents = 0
 //
 //        SPTProximityManager.setExitWorkCallbackWith(exitWorkConf) { (placeCoord) in
+//            print("Work Exit at \(placeCoord)")
 //            presentNotif(title: "Adios Work", message: "Work Exit notif triggered at \(placeCoord)")
 //        }
 //
