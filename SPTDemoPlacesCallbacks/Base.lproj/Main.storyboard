@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="off-ni-xby">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -7,33 +7,104 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="eg2-y0-F3z">
+            <objects>
+                <navigationController id="off-ni-xby" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="gG0-t2-mif">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e5L-bN-vv0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IC-rU-STS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1061" y="83"/>
+        </scene>
+        <!--  -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SPTDemoPlacesCallbacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EJJ-7c-guG">
-                                <rect key="frame" x="70" y="197" width="274" height="512"/>
-                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="419-2k-Qhl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efI-M6-SuV">
+                                <rect key="frame" x="334" y="694" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="efI-M6-SuV" secondAttribute="height" multiplier="1:1" id="OOo-tA-ZuJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="hnX-ML-k0Z"/>
+                                </constraints>
+                                <state key="normal" image="radar"/>
+                                <connections>
+                                    <action selector="showAnnotationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rKe-36-ke6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EJJ-7c-guG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="KHx-Aw-OaF"/>
-                            <constraint firstItem="EJJ-7c-guG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cfY-95-I24"/>
-                            <constraint firstItem="EJJ-7c-guG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kDc-gx-LAF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="efI-M6-SuV" secondAttribute="bottom" constant="20" id="BLZ-Lm-eyE"/>
+                            <constraint firstItem="419-2k-Qhl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HlL-UK-tAJ"/>
+                            <constraint firstAttribute="bottom" secondItem="419-2k-Qhl" secondAttribute="bottom" id="Yhg-vM-THw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efI-M6-SuV" secondAttribute="trailing" constant="20" id="ZjY-ho-Gkx"/>
+                            <constraint firstItem="419-2k-Qhl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="foe-97-U3f"/>
+                            <constraint firstItem="419-2k-Qhl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rCS-8N-FrV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="  " id="7Jl-lu-Cj2">
+                        <barButtonItem key="backBarButtonItem" title="  " id="Ggy-SH-GCs"/>
+                        <view key="titleView" contentMode="scaleToFill" id="cvH-vm-dlx">
+                            <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKK-hz-rEp">
+                                    <rect key="frame" x="-22" y="-22" width="44" height="44"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="248" verticalHuggingPriority="249" horizontalCompressionResistancePriority="752" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vhq-D6-hiS">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="vhq-D6-hiS" secondAttribute="height" id="NMr-Sr-5mj"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="vhq-D6-hiS" firstAttribute="top" secondItem="KKK-hz-rEp" secondAttribute="top" id="8gd-0C-VWS"/>
+                                        <constraint firstAttribute="bottom" secondItem="vhq-D6-hiS" secondAttribute="bottom" id="N4p-WL-ljB"/>
+                                        <constraint firstAttribute="trailing" secondItem="vhq-D6-hiS" secondAttribute="trailing" id="O6E-5W-TLa"/>
+                                        <constraint firstItem="vhq-D6-hiS" firstAttribute="leading" secondItem="KKK-hz-rEp" secondAttribute="leading" id="edT-Ye-xru"/>
+                                        <constraint firstAttribute="width" constant="44" id="q5W-KC-xVe"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="KKK-hz-rEp" firstAttribute="centerY" secondItem="cvH-vm-dlx" secondAttribute="centerY" id="OAZ-RO-PbR"/>
+                                <constraint firstItem="KKK-hz-rEp" firstAttribute="centerX" secondItem="cvH-vm-dlx" secondAttribute="centerX" id="PuX-DM-1p4"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle.fill" catalog="system" style="plain" id="ba5-hU-rfQ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="419-2k-Qhl" id="9qc-EW-ryZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="94"/>
+            <point key="canvasLocation" x="-300" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logo" width="512" height="512"/>
+        <image name="radar" width="104" height="104"/>
     </resources>
 </document>
