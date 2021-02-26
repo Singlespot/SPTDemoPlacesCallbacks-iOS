@@ -7,6 +7,6 @@ target 'SPTDemoPlacesCallbacks' do
 
   # Pods for SPTDemoPlacesCallbacks
 
-  pod 'SPTProximityKit', :git => 'https://singlespot:5OpcxSLubik4@sdk.singlespot.com/cocoapods/SPTProximityKit.git'
+  pod 'SPTProximityKit', :git => 'https://<USER_NAME>:<PASSWORD>@sdk.singlespot.com/cocoapods/SPTProximityKit.git'
 
 end
