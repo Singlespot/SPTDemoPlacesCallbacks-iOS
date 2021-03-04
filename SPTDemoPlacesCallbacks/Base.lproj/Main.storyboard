@@ -89,7 +89,7 @@
                                 <constraint firstItem="KKK-hz-rEp" firstAttribute="centerX" secondItem="cvH-vm-dlx" secondAttribute="centerX" id="PuX-DM-1p4"/>
                             </constraints>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle.fill" catalog="system" style="plain" id="ba5-hU-rfQ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle.fill" catalog="system" style="done" id="ba5-hU-rfQ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="eUD-Vp-cdx" kind="presentation" id="FJB-kS-kjf"/>

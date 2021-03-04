@@ -19,35 +19,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        requestNotif()
         //First and last coord of GPX file (for test purpose ONLY)
         SPTTestPlacesCallbacks.setHomePlaceAtLat(AppDelegate.testHomeCoord.latitude, lng: AppDelegate.testHomeCoord.longitude)
         SPTTestPlacesCallbacks.setWorkPlaceAtLat(AppDelegate.testWorkCoord.latitude, lng: AppDelegate.testWorkCoord.longitude)
-
+        
         let enterHomeConf = SPTPlaceVisitCallbackConfiguration()
         enterHomeConf.afterHourOftheDay = 0
-        enterHomeConf.beforeHourOfTheDay = 0
+        enterHomeConf.beforeHourOfTheDay = 24
         enterHomeConf.minHoursBetweenEvents = 0
-        SPTProximityManager.setEnterHomeCallbackWith(enterHomeConf) { [weak self] (placeCoord) in
-            print("Home Enter at \(placeCoord)")
-            self?.presentNotif(title: "Welcome Home", message: "Home Enter notif triggered at \(placeCoord)")
+        SPTProximityManager.setEnterHomeCallbackWith(enterHomeConf) { (placeCoord) in
+            print("[SPT Demo] Enter Home ➡️ 🏠")
+            AppDelegate.presentNotif(title: "[SPT Demo] Enter Home", message: "➡️ 🏠")
         }
 
         let exitWorkConf = SPTPlaceVisitCallbackConfiguration()
         exitWorkConf.afterHourOftheDay = 0
-        exitWorkConf.beforeHourOfTheDay = 0
+        exitWorkConf.beforeHourOfTheDay = 24
         exitWorkConf.minHoursBetweenEvents = 0
-        SPTProximityManager.setExitWorkCallbackWith(exitWorkConf) { [weak self] (placeCoord) in
-            print("Work Exit at \(placeCoord)")
-            self?.presentNotif(title: "Adios Work", message: "Work Exit notif triggered at \(placeCoord)")
+        SPTProximityManager.setExitWorkCallbackWith(exitWorkConf) { (placeCoord) in
+            print("[SPT Demo] Exit  Work 🏢 ➡️")
+            AppDelegate.presentNotif(title: "[SPT Demo] Exit Work", message: "🏢 ➡️")
         }
-
 
         SPTProximityManager.setApiKey(YOUR_API_KEY, secret: YOUR_API_SECRET)
         
         return true
     }
     
-    func presentNotif(title: String, message: String) {
+    func requestNotif() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]){ granted, error in }
+    }
+    
+    static func presentNotif(title: String, message: String) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = message
