@@ -36,17 +36,18 @@ class ViewController: UIViewController {
         mapView.addAnnotations(placesAnnotations)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        mapView.showAnnotations(placesAnnotations, animated: false)
+    }
+    
     @IBAction func showAnnotationButtonClicked(_ sender: Any) {
         mapView.showAnnotations(mapView.annotations, animated: true)
     }
 }
 
 extension ViewController: MKMapViewDelegate {
-    
-    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
-        mapView.showAnnotations(placesAnnotations, animated: false)
-    }
-    
+     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         if annotation.isKind(of: MKUserLocation.self) { return nil }

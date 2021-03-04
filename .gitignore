@@ -46,3 +46,13 @@ Pods/Target Support Files/SPTProximityKit/SPTProximityKit-xcframeworks.sh
 Pods/Target Support Files/SPTProximityKit/SPTProximityKit.debug.xcconfig
 Pods/Target Support Files/SPTProximityKit/SPTProximityKit.release.xcconfig
 SPTDemoPlacesCallbacks.xcworkspace/contents.xcworkspacedata
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTBuiltInPopupAppearance.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTCustomPopup.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTIDFAPopupConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTPlaceVisitCallbackConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-arm64_armv7/SPTProximityKit.framework/Headers/SPTTestPlacesCallbacks.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTBuiltInPopupAppearance.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTCustomPopup.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTIDFAPopupConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTPlaceVisitCallbackConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.xcframework/ios-i386_x86_64-simulator/SPTProximityKit.framework/Headers/SPTTestPlacesCallbacks.h

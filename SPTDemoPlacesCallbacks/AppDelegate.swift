@@ -20,41 +20,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //First and last coord of GPX file (for test purpose ONLY)
-//        SPTTestPlacesCallbacks.setHomePlaceAtLat(testHomeCoord.latitude, lng: testHomeCoord.longitude)
-//        SPTTestPlacesCallbacks.setWorkPlaceAtLat(testWorkCoord.latitude, lng: testWorkCoord.longitude)
-//
-//        let enterHomeConf = SPTPlaceVisitCallbackConfiguration()
-//        enterHomeConf.afterHourOftheDay = 0
-//        enterHomeConf.beforeHourOfTheDay = 0
-//        enterHomeConf.minHoursBetweenEvents = 0
-//        SPTProximityManager.setEnterHomeCallbackWith(enterHomeConf) { (placeCoord) in
-//            print("Home Enter at \(placeCoord)")
-//            presentNotif(title: "Welcome Home", message: "Home Enter notif triggered at \(placeCoord)")
-//        }
-//
-//        let exitWorkConf = SPTPlaceVisitCallbackConfiguration()
-//        exitWorkConf.afterHourOftheDay = 0
-//        exitWorkConf.beforeHourOfTheDay = 0
-//        exitWorkConf.minHoursBetweenEvents = 0
-//
-//        SPTProximityManager.setExitWorkCallbackWith(exitWorkConf) { (placeCoord) in
-//            print("Work Exit at \(placeCoord)")
-//            presentNotif(title: "Adios Work", message: "Work Exit notif triggered at \(placeCoord)")
-//        }
-//
-//
-//        SPTProximityManager.setApiKey(<YOUR_API_KEY>, secret: <YOUR_API_SECRET>)
+        SPTTestPlacesCallbacks.setHomePlaceAtLat(AppDelegate.testHomeCoord.latitude, lng: AppDelegate.testHomeCoord.longitude)
+        SPTTestPlacesCallbacks.setWorkPlaceAtLat(AppDelegate.testWorkCoord.latitude, lng: AppDelegate.testWorkCoord.longitude)
+
+        let enterHomeConf = SPTPlaceVisitCallbackConfiguration()
+        enterHomeConf.afterHourOftheDay = 0
+        enterHomeConf.beforeHourOfTheDay = 0
+        enterHomeConf.minHoursBetweenEvents = 0
+        SPTProximityManager.setEnterHomeCallbackWith(enterHomeConf) { [weak self] (placeCoord) in
+            print("Home Enter at \(placeCoord)")
+            self?.presentNotif(title: "Welcome Home", message: "Home Enter notif triggered at \(placeCoord)")
+        }
+
+        let exitWorkConf = SPTPlaceVisitCallbackConfiguration()
+        exitWorkConf.afterHourOftheDay = 0
+        exitWorkConf.beforeHourOfTheDay = 0
+        exitWorkConf.minHoursBetweenEvents = 0
+        SPTProximityManager.setExitWorkCallbackWith(exitWorkConf) { [weak self] (placeCoord) in
+            print("Work Exit at \(placeCoord)")
+            self?.presentNotif(title: "Adios Work", message: "Work Exit notif triggered at \(placeCoord)")
+        }
+
+
+        SPTProximityManager.setApiKey(YOUR_API_KEY, secret: YOUR_API_SECRET)
         
         return true
     }
     
     func presentNotif(title: String, message: String) {
-//        UILocalNotification *notification = [[UILocalNotification alloc] init];
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = message
-         
-        // Create the request object.
+        
         let request = UNNotificationRequest(identifier: "SPTNotif", content: content, trigger: nil)
         
         UNUserNotificationCenter.current().add(request)
